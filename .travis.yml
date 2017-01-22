@@ -8,10 +8,12 @@ node_js:
 install:
   - git clone https://github.com/TheFourFifths/consus.git
   - cd consus
+  - git checkout dev
   - npm install
   - cd ../
   - git clone https://github.com/TheFourFifths/consus-client.git
   - cd consus-client
+  - git checkout dev
   - npm install
   - cd ../
   
