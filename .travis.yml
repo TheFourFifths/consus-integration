@@ -23,6 +23,8 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script:
+  - cd consus
+  - npm start --port=8081
   - cd consus-client
   - npm run integration-test
 
