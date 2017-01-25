@@ -9,7 +9,7 @@ install:
   - git clone https://github.com/TheFourFifths/consus.git
   - cd consus
   - git checkout dev
-  - npm install
+  - npm install -g
   - cd ../
   - git clone https://github.com/TheFourFifths/consus-client.git
   - cd consus-client
@@ -23,8 +23,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script:
-  - cd consus
-  - npm start --port=8081
+  - consusd start --port=8081
   - cd consus-client
   - npm run integration-test
 
