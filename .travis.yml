@@ -26,6 +26,7 @@ script:
   - consusd start --port=8081
   - cd consus-client
   - npm run integration-test
+  - consusd stop
 
 notifications:
   email: false
